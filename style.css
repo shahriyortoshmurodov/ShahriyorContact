@@ -19,13 +19,14 @@ background: linear-gradient(90deg, rgba(121,59,167,1) 4%, rgba(79,0,209,1) 47%, 
     width: 80%;
 }
 .row{
+    min-width: 350px;
     width: 500px;
     margin: 0 auto;
     padding: 10px;
     border-radius: 10px;
     justify-content: center;
     background: rgb(121,59,167);
-    background: linear-gradient(90deg, rgba(121,59,167,1) 4%, rgba(79,0,209,1) 47%, rgba(31,0,91,1) 91%);
+    background: linear-gradient(90deg, rgb(87, 35, 127) 4%, rgb(107, 81, 149) 47%, rgba(31,0,91,1) 91%);
 }
 
 h1 {
@@ -75,4 +76,44 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    .container {
+        width: 100%;
+    }
+    .row {
+        max-width: 100%;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .info p {
+        font-size: 14px;
+    }
+    input, textarea {
+        font-size: 14px;
+    }
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+    .info p {
+        font-size: 12px;
+    }
+    input, textarea {
+        font-size: 12px;
+    }
+    button {
+        font-size: 14px;
+    }
 }
